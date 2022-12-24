@@ -21,7 +21,7 @@ mongoose
 // middleware
 
 app.use(helmet());
-app.use(cors({ credentials: true }));
+app.use(cors());
 app.use(cookieParser());
 app.use(express.json());
 app.use('/auth', authRoute);
